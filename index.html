@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ramanjaneyulu Vakkapatla | Cybersecurity Portfolio</title>
+
+    <meta name="description"
+          content="Cybersecurity portfolio of Ramanjaneyulu Vakkapatla - SOC Analyst and cybersecurity professional.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: #e6edf7;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(7, 17, 31, 0.95);
+            border-bottom: 1px solid #1d334d;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 25px 60px;
+            background:
+                radial-gradient(circle at top, #123052 0%, #07111f 55%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .terminal {
+            color: #22c55e;
+            font-family: monospace;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 72px);
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            color: #94a3b8;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #a9b8ca;
+            font-size: 17px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 6px;
+            border: 1px solid #38bdf8;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #06111d;
+        }
+
+        .primary:hover {
+            background: #7dd3fc;
+        }
+
+        .secondary {
+            color: #38bdf8;
+        }
+
+        .secondary:hover {
+            background: #10263b;
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .section-description {
+            color: #94a3b8;
+            margin-bottom: 35px;
+        }
+
+        /* ABOUT */
+        .about-box {
+            background: #0c1a2b;
+            border: 1px solid #1d334d;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .about-box p {
+            color: #b8c5d6;
+            margin-bottom: 15px;
+        }
+
+        /* SKILLS */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #0c1a2b;
+            border: 1px solid #1d334d;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .skill-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .skill-card p {
+            color: #9fb0c4;
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #0c1a2b;
+            border: 1px solid #1d334d;
+            padding: 28px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #9fb0c4;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #10263b;
+            color: #38bdf8;
+            padding: 5px 9px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        /* CERTIFICATIONS */
+        .cert-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: #0c1a2b;
+            border-left: 4px solid #38bdf8;
+            padding: 18px 22px;
+            color: #cbd5e1;
+        }
+
+        /* LAB */
+        .lab-box {
+            background: #06101d;
+            border: 1px solid #1d334d;
+            border-radius: 10px;
+            padding: 25px;
+            font-family: monospace;
+        }
+
+        .lab-line {
+            margin: 8px 0;
+        }
+
+        .green {
+            color: #22c55e;
+        }
+
+        .blue {
+            color: #38bdf8;
+        }
+
+        .gray {
+            color: #64748b;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            text-align: center;
+            background: #0c1a2b;
+            border: 1px solid #1d334d;
+            padding: 40px 25px;
+            border-radius: 10px;
+        }
+
+        .contact-box p {
+            color: #9fb0c4;
+            margin-bottom: 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid #1d334d;
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            &lt;CyberSec/&gt;
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#lab">SOC Lab</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="terminal">
+            &gt; initializing cybersecurity portfolio...
+        </div>
+
+        <h1>
+            Ramanjaneyulu <span>Vakkapatla</span>
+        </h1>
+
+        <h2>
+            Cybersecurity | SOC Analyst | Blue Team
+        </h2>
+
+        <p>
+            Cybersecurity-focused professional building practical
+            experience in security monitoring, threat detection,
+            log analysis and defensive security operations.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn primary">
+                View Projects
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">
+        About <span>Me</span>
+    </h2>
+
+    <p class="section-description">
+        A short introduction
+    </p>
+
+    <div class="about-box">
+
+        <p>
+            I am a cybersecurity-focused professional with an interest
+            in Security Operations, threat detection, log analysis and
+            defensive security.
+        </p>
+
+        <p>
+            I enjoy working with security tools, investigating events,
+            understanding attack techniques and building practical
+            cybersecurity labs to improve my technical skills.
+        </p>
+
+        <p>
+            My current focus is developing hands-on SOC Analyst skills
+            through security monitoring, Windows event analysis,
+            SIEM investigations and practical lab exercises.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="section-title">
+        Technical <span>Skills</span>
+    </h2>
+
+    <p class="section-description">
+        Technologies and cybersecurity areas I work with
+    </p>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>SIEM & Monitoring</h3>
+            <p>
+                Splunk, log analysis, security event monitoring,
+                alert investigation and incident detection.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Network Security</h3>
+            <p>
+                Wireshark, Nmap, network traffic analysis,
+                reconnaissance and basic network security concepts.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Security Tools</h3>
+            <p>
+                Kali Linux, Burp Suite, Wazuh, Microsoft Defender
+                and other defensive security technologies.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Windows Security</h3>
+            <p>
+                Windows Event Logs, process creation monitoring,
+                authentication events and security auditing.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p>
+                Python, Java, SQL, HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Security Concepts</h3>
+            <p>
+                SOC operations, threat detection, incident response,
+                vulnerability management and defensive security.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="section-title">
+        Security <span>Projects</span>
+    </h2>
+
+    <p class="section-description">
+        Practical projects and security-focused work
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+
+            <h3>Home SOC Lab</h3>
+
+            <p>
+                Built a practical SOC environment for monitoring
+                Windows security events using Splunk, a Universal
+                Forwarder and an Indexer.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Splunk</span>
+                <span class="tag">Windows</span>
+                <span class="tag">SIEM</span>
+                <span class="tag">SOC</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>Windows Process Monitoring</h3>
+
+            <p>
+                Investigated Windows Security Event ID 4688 to monitor
+                process creation activity and analyze process execution
+                within a Windows environment.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Event ID 4688</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Splunk</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>DeepSkin</h3>
+
+            <p>
+                Developed a machine-learning project focused on
+                skin lesion classification using deep learning
+                techniques.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Machine Learning</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOC LAB -->
+<section id="lab">
+
+    <h2 class="section-title">
+        My <span>SOC Lab</span>
+    </h2>
+
+    <p class="section-description">
+        Practical security monitoring environment
+    </p>
+
+    <div class="lab-box">
+
+        <div class="lab-line">
+            <span class="green">[ONLINE]</span>
+            Windows Security Monitoring
+        </div>
+
+        <div class="lab-line">
+            <span class="green">[ONLINE]</span>
+            Splunk Universal Forwarder
+        </div>
+
+        <div class="lab-line">
+            <span class="green">[ONLINE]</span>
+            Splunk Indexer
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[MONITORING]</span>
+            Windows Security Events
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[ANALYZING]</span>
+            Event ID 4688 - Process Creation
+        </div>
+
+        <div class="lab-line">
+            <span class="gray">
+                &gt; Security monitoring environment initialized.
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+
+    <h2 class="section-title">
+        Certifications & <span>Learning</span>
+    </h2>
+
+    <p class="section-description">
+        Courses and professional learning
+    </p>
+
+    <div class="cert-list">
+
+        <div class="cert-item">
+            Agile Project Management
+        </div>
+
+        <div class="cert-item">
+            Business Intelligence Fundamentals
+        </div>
+
+        <div class="cert-item">
+            Introduction to MS Excel
+        </div>
+
+        <div class="cert-item">
+            Power BI
+        </div>
+
+        <div class="cert-item">
+            Cybersecurity Training & Practical SOC Learning
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="section-title">
+        Get In <span>Touch</span>
+    </h2>
+
+    <p class="section-description">
+        Let's connect
+    </p>
+
+    <div class="contact-box">
+
+        <p>
+            Interested in cybersecurity, SOC operations and
+            defensive security opportunities.
+        </p>
+
+        <div class="contact-links">
+
+            <!-- Replace these links with your actual profiles -->
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               class="btn secondary">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               class="btn secondary">
+                GitHub
+            </a>
+
+            <a href="mailto:your-email@example.com"
+               class="btn secondary">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 Ramanjaneyulu Vakkapatla.
+    Built for a cybersecurity career.
+
+</footer>
+
+</body>
+</html>
