@@ -444,71 +444,78 @@
 </section>
 
 
-<!-- SOC LAB -->
 <section id="lab">
 
     <h2 class="section-title">
-        My <span>SOC Lab</span>
+        SOC <span>Home Lab</span>
     </h2>
 
     <p class="section-description">
-        Hands-on security monitoring and investigation environment
+        Hands-on Security Operations Center environment built to practice
+        SIEM monitoring, Windows log analysis, threat detection and
+        security investigation.
     </p>
 
     <div class="lab-box">
 
         <div class="lab-line">
-            <span class="green">[ARCHITECTURE]</span>
-            Windows VM → Universal Forwarder → Heavy Forwarder → Splunk Indexer
+            <span class="green">[SOC]</span>
+            <span class="blue">Environment:</span>
+            Multi-VM Security Monitoring Lab
         </div>
 
         <div class="lab-line">
-            <span class="green">[COLLECTING]</span>
-            Windows Application, System and Security Event Logs
+            <span class="green">[01]</span>
+            <span class="blue">Endpoint:</span>
+            Windows VM
         </div>
 
         <div class="lab-line">
-            <span class="green">[FORWARDING]</span>
-            Security events forwarded through Splunk Universal Forwarder
+            <span class="green">[02]</span>
+            <span class="blue">Log Collection:</span>
+            Splunk Universal Forwarder
         </div>
 
         <div class="lab-line">
-            <span class="blue">[MONITORING]</span>
-            Windows authentication and security activity
+            <span class="green">[03]</span>
+            <span class="blue">Log Processing:</span>
+            Splunk Heavy Forwarder
         </div>
 
         <div class="lab-line">
-            <span class="blue">[INVESTIGATING]</span>
-            Event ID 4688 — Process Creation
+            <span class="green">[04]</span>
+            <span class="blue">SIEM:</span>
+            Splunk Indexer
         </div>
 
         <div class="lab-line">
-            <span class="blue">[ANALYZING]</span>
-            PowerShell and process execution activity
+            <span class="green">[05]</span>
+            <span class="blue">Monitoring:</span>
+            Windows Security Events & Authentication Activity
         </div>
 
         <div class="lab-line">
-            <span class="blue">[DETECTING]</span>
-            Failed authentication and brute-force activity
+            <span class="green">[06]</span>
+            <span class="blue">Investigation:</span>
+            Log Analysis & Suspicious Activity Investigation
         </div>
 
         <div class="lab-line">
-            <span class="gray">
-                &gt; Collect → Forward → Index → Search → Investigate → Detect
-            </span>
+            <span class="green">[07]</span>
+            <span class="blue">Detection:</span>
+            Failed Login & Process Creation Monitoring
         </div>
 
         <div class="lab-line">
-            <span class="green">
-                [STATUS]
-            </span>
-            Practical SOC monitoring environment
+            <span class="green">[08]</span>
+            <span class="blue">Objective:</span>
+            Simulate SOC workflows and strengthen hands-on
+            defensive security skills
         </div>
 
     </div>
 
 </section>
-
 <!-- CERTIFICATIONS -->
 <section id="certifications">
 
