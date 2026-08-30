@@ -571,3 +571,499 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #38bdf8;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ramanjaneyulu Vakkapatla | Cybersecurity Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+          content="Cybersecurity portfolio of Ramanjaneyulu Vakkapatla - SOC Analyst and cybersecurity professional.">
+    
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            &lt;CyberSec/&gt;
+        </div>
+<button class="menu-toggle" aria-label="Open navigation">
+    ☰
+</button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#lab">SOC Lab</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="terminal">
+            &gt; initializing cybersecurity portfolio...
+        </div>
+
+        <h1>
+            Ramanjaneyulu <span>Vakkapatla</span>
+        </h1>
+
+        <h2>
+            Cybersecurity | SOC Analyst | Blue Team
+        </h2>
+
+        <p>
+           
+    Cybersecurity-focused professional developing hands-on SOC
+    and defensive security experience through SIEM monitoring,
+    Windows security event analysis, threat detection and
+    practical security investigations.
+        </p>
+
+       <div class="buttons">
+            <a href="#projects" class="btn primary">
+                View Security Projects
+            </a>
+            <a href="#lab" class="btn secondary">
+                Explore SOC Lab
+            </a>
+       </div>
+
+    </div>
+
+</header>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">
+        About <span>Me</span>
+    </h2>
+
+    <p class="section-description">
+        Cybersecurity-focused professional building practical SOC and defensive security skills
+    </p>
+
+    <div class="about-box">
+
+        <p>
+            I am a cybersecurity-focused professional with an MCA background and
+            a strong interest in Security Operations, threat detection, security
+            monitoring, and defensive cybersecurity.
+        </p>
+
+        <p>
+            I enjoy analyzing security events, investigating suspicious activity,
+            working with security tools, and understanding how attacks are detected
+            and investigated. I believe in learning through hands-on practice and
+            continuously improving my technical skills.
+        </p>
+
+        <p>
+            My current focus is developing practical SOC Analyst skills through
+            Windows security monitoring, event log analysis, SIEM investigations,
+            threat detection, and hands-on cybersecurity lab exercises using tools
+            such as Splunk and other security technologies.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="section-title">
+        Technical <span>Skills</span>
+    </h2>
+
+    <p class="section-description">
+        Cybersecurity tools, technologies and defensive security capabilities
+    </p>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>SIEM & Security Monitoring</h3>
+            <p>
+                Splunk, SIEM monitoring, log analysis, security event
+                investigation, alert analysis and threat detection.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Windows Security</h3>
+            <p>
+                Windows Event Logs, Security event analysis, process
+                creation monitoring, authentication events and security auditing.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Network Security</h3>
+            <p>
+                Wireshark, Nmap, network traffic analysis, reconnaissance,
+                network monitoring and fundamental network security concepts.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Security Tools</h3>
+            <p>
+                Kali Linux, Burp Suite, Wazuh, Microsoft Defender and
+                other security monitoring and defensive security tools.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Incident Detection & Response</h3>
+            <p>
+                Threat detection, suspicious activity investigation,
+                authentication monitoring, incident analysis and
+                defensive security practices.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming & Databases</h3>
+            <p>
+                Python, Java, SQL, MySQL, HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="section-title">
+        Security <span>Projects</span>
+    </h2>
+
+    <p class="section-description">
+        Hands-on cybersecurity projects, security monitoring and technical work
+    </p>
+
+    <div class="projects-grid">
+
+       <!-- PROJECT 1 -->
+       <div class="project-card">
+
+            <h3>Splunk SOC Home Lab</h3>
+
+            <p>
+                Built a multi-VM Security Operations Center environment to
+                collect, forward, index and investigate Windows security events
+                using Splunk.
+            </p>
+
+            <div class="project-details">
+
+                <div>
+                    <strong>Environment</strong>
+                    <span>Windows VM → Universal Forwarder → Heavy Forwarder → Splunk Indexer</span>
+                </div>
+
+                <div>
+                    <strong>Activities</strong>
+                    <span>Log collection, event forwarding, SIEM monitoring and security investigation</span>
+                </div>
+
+                <div>
+                    <strong>Focus</strong>
+                    <span>Windows Security Events, authentication activity and process monitoring</span>
+                </div>
+
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Splunk</span>
+                    <span class="tag">SIEM</span>
+                    <span class="tag">Windows</span>
+                    <span class="tag">Universal Forwarder</span>
+                    <span class="tag">Heavy Forwarder</span>
+                    <span class="tag">Security Monitoring</span>
+                </div>
+
+        </div>
+        
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+
+            <h3>Windows Process Creation Monitoring</h3>
+
+            <p>
+                Monitored Windows Security Event ID 4688 to investigate
+                process creation activity and analyze parent-child process
+                relationships. Used controlled PowerShell activity to
+                generate and investigate process events in Splunk.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Event ID 4688</span>
+                <span class="tag">PowerShell</span>
+                <span class="tag">Splunk</span>
+                <span class="tag">Log Analysis</span>
+                <span class="tag">Threat Detection</span>
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+
+            <h3>Authentication & Brute-Force Detection Lab</h3>
+
+            <p>
+                Developed security monitoring scenarios using Windows
+                authentication events to identify failed login activity,
+                investigate suspicious authentication patterns and create
+                detection logic within Splunk.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Splunk</span>
+                <span class="tag">Windows Events</span>
+                <span class="tag">Authentication</span>
+                <span class="tag">Detection</span>
+                <span class="tag">SOC</span>
+            </div>
+
+        </div>
+
+
+        <!-- TECHNICAL PROJECT -->
+        <div class="project-card">
+
+            <h3>DeepSkin</h3>
+
+            <p>
+                Developed a deep learning project for skin lesion
+                classification using Python and machine learning
+                techniques. The project strengthened my experience
+                with data processing, model development and evaluation.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Machine Learning</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOC LAB -->
+<section id="lab">
+
+    <h2 class="section-title">
+        My <span>SOC Lab</span>
+    </h2>
+
+    <p class="section-description">
+        Hands-on security monitoring and investigation environment
+    </p>
+
+    <div class="lab-box">
+
+        <div class="lab-line">
+            <span class="green">[ARCHITECTURE]</span>
+            Windows VM → Universal Forwarder → Heavy Forwarder → Splunk Indexer
+        </div>
+
+        <div class="lab-line">
+            <span class="green">[COLLECTING]</span>
+            Windows Application, System and Security Event Logs
+        </div>
+
+        <div class="lab-line">
+            <span class="green">[FORWARDING]</span>
+            Security events forwarded through Splunk Universal Forwarder
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[MONITORING]</span>
+            Windows authentication and security activity
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[INVESTIGATING]</span>
+            Event ID 4688 — Process Creation
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[ANALYZING]</span>
+            PowerShell and process execution activity
+        </div>
+
+        <div class="lab-line">
+            <span class="blue">[DETECTING]</span>
+            Failed authentication and brute-force activity
+        </div>
+
+        <div class="lab-line">
+            <span class="gray">
+                &gt; Collect → Forward → Index → Search → Investigate → Detect
+            </span>
+        </div>
+
+        <div class="lab-line">
+            <span class="green">
+                [STATUS]
+            </span>
+            Practical SOC monitoring environment
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+
+    <h2 class="section-title">
+        Certifications & <span>Training</span>
+    </h2>
+
+    <p class="section-description">
+        Cybersecurity certifications and professional training
+    </p>
+
+    <div class="cert-list">
+
+        <div class="cert-item">
+            <strong>ISC2 Certified in Cybersecurity (CC)</strong>
+            <br>
+            <span class="gray">
+                ISC2
+            </span>
+        </div>
+
+        <div class="cert-item">
+            <strong>Splunk Fundamentals 1</strong>
+            <br>
+            <span class="gray">
+                Splunk Education
+            </span>
+        </div>
+
+        <div class="cert-item">
+            <strong>Introduction to Cybersecurity</strong>
+            <br>
+            <span class="gray">
+                Cisco Networking Academy
+            </span>
+        </div>
+
+        <div class="cert-item">
+            <strong>IBM Cybersecurity Fundamentals</strong>
+            <br>
+            <span class="gray">
+                IBM
+            </span>
+        </div>
+
+        <div class="cert-item">
+            <strong>SOC Analyst Course</strong>
+            <br>
+            <span class="gray">
+                Brolly Academy
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="section-title">
+        Get In <span>Touch</span>
+    </h2>
+
+    <p class="section-description">
+        Open to cybersecurity and SOC opportunities
+    </p>
+
+    <div class="contact-box">
+
+        <p>
+            I am interested in entry-level cybersecurity and SOC
+            opportunities where I can apply my security knowledge,
+            hands-on lab experience and problem-solving skills while
+            continuing to grow as a cybersecurity professional.
+        </p>
+
+        <div class="contact-links">
+            <a href="Ramanjaneyulu_Cybersecurity_Resume.pdf"
+            target="_blank"
+            class="btn primary">
+            View Resume
+            </a>
+
+            <a href="Ramanjaneyulu_Cybersecurity_Resume.pdf"
+            download
+            class="btn secondary">
+            Download Resume
+            </a>
+            <!-- Replace with your actual LinkedIn URL -->
+            <a href="http://www.linkedin.com/in/v-s-ramanjaneyulu-vakkapatla-020097356"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn secondary">
+                LinkedIn
+            </a>
+
+            <!-- Replace with your actual GitHub URL -->
+            <a href="YOUR_GITHUB_URL"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn secondary">
+                GitHub
+            </a>
+
+            <!-- Replace with your professional email -->
+            <a href="mailto:ramvakkapatla2003@gmail.com"
+               class="btn secondary">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 Ramanjaneyulu Vakkapatla.
+    Built for a cybersecurity career.
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
