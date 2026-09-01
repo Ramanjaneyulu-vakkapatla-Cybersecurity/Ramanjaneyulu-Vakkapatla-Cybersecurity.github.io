@@ -535,22 +535,48 @@ section {
 
 .contact-box {
     text-align: center;
-    background: #0c1a2b;
+
+    background: linear-gradient(
+        145deg,
+        #0c1a2b,
+        #091625
+    );
+
     border: 1px solid #1d334d;
-    padding: 40px 25px;
-    border-radius: 10px;
+    padding: 42px 30px;
+    border-radius: 12px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.28);
 }
 
 .contact-box p {
-    color: #9fb0c4;
-    margin-bottom: 25px;
+    max-width: 760px;
+    margin: 0 auto 18px;
+
+    color: #a9b8ca;
+    font-size: 15px;
+    line-height: 1.8;
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.contact-box p:last-of-type {
+    margin-bottom: 28px;
+}
+
+footer {
+    border-top: 1px solid #1d334d;
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 13px;
 }
 
 
@@ -560,10 +586,15 @@ section {
 
 footer {
     border-top: 1px solid #1d334d;
+
+    background: #06101d;
+
     text-align: center;
-    padding: 25px;
+    padding: 28px 20px;
+
     color: #64748b;
     font-size: 13px;
+    line-height: 1.6;
 }
 
 
@@ -652,6 +683,22 @@ footer {
     .hero .btn {
         min-width: 130px;
     }
+    .contact-box {
+    padding: 32px 20px;
+}
+
+.contact-box p {
+    font-size: 14px;
+}
+
+.contact-links {
+    gap: 10px;
+}
+
+.contact-links .btn {
+    width: 100%;
+    max-width: 260px;
+} 
 }
 
 
