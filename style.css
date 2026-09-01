@@ -449,19 +449,56 @@ section {
     gap: 15px;
 }
 
-.cert-item {
+ .cert-item {
     background: #0c1a2b;
+    border: 1px solid #1d334d;
     border-left: 4px solid #38bdf8;
-    padding: 18px 22px;
+
+    padding: 22px 24px;
+    border-radius: 8px;
+
     color: #cbd5e1;
-    transition: 0.3s;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.cert-item strong {
+    display: block;
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+
+    margin-bottom: 8px;
+}
+
+.cert-item span {
+    display: block;
+
+    color: #9fb0c4;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .cert-item:hover {
     background: #102238;
     transform: translateX(5px);
+
+    border-color: #294766;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.22);
+}
+.cert-item .tags {
+    margin-top: 14px;
 }
 
+.cert-item .tag {
+    font-size: 11px;
+}
 
 /* ========================================
    SOC LAB
@@ -691,9 +728,9 @@ footer {
     border-color: #38bdf8;
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.35);
+        0 15px 35px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(56, 189, 248, 0.06);
 }
-
 .project-card:hover::before {
     transform: scaleX(1);
 }
@@ -702,6 +739,8 @@ footer {
     color: #ffffff;
     font-size: 20px;
     margin-bottom: 12px;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
 }
 
 .project-card > p {
@@ -746,7 +785,16 @@ footer {
 
 .tag {
     border: 1px solid rgba(56, 189, 248, 0.15);
-    transition: 0.2s ease;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.tag:hover {
+    background: #15334d;
+    border-color: rgba(56, 189, 248, 0.4);
+    transform: translateY(-1px);
 }
 
 .tag:hover {
