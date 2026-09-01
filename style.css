@@ -796,8 +796,3 @@ footer {
     border-color: rgba(56, 189, 248, 0.4);
     transform: translateY(-1px);
 }
-
-.tag:hover {
-    background: #15334d;
-    border-color: rgba(56, 189, 248, 0.4);
-}
